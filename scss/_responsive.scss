@@ -1,0 +1,108 @@
+@include media-md{
+    .menu-btn{
+        visibility:hidden;
+    }
+
+    .nav{
+        visibility: visible;
+
+        .menu-nav{
+            display:block;
+            transform: translateY(-20%) translateX(10%);
+            height:100%;
+            background:transparent;
+            text-align: right;
+
+            &__item{
+                display:inline;
+                padding-right: 1.5rem;
+            }
+
+            &__link{
+                font-size:1rem;
+
+            }
+        }
+
+    }
+
+        .projects__bio-image, .about__bio-image, .home__bio-image, .contact__bio-image {
+            height:70vh; 
+ }
+
+ .about__bio{
+     font-size:1.4rem;
+ }
+ .about h6{
+    font-size: 0.8rem;
+}
+ .projects{
+     &__items{
+         width:auto;
+         padding:1rem 5rem;
+         grid-template-columns: repeat(2, 1fr);
+     }
+     .text-secondary{
+         font-size: 3rem;
+     }
+     
+ }
+
+ .about .jobs {
+    width: 80vh;
+    
+}
+
+
+}  
+
+@include media-lg{
+    .projects{
+        &__items{
+            width:auto;
+            padding:1rem 5rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .text-secondary{
+            font-size: 3rem;
+        }
+
+    }
+    
+
+    .projects__bio-image, .about__bio-image, .home__bio-image, .contact__bio-image {
+        height:90vh; 
+    }
+
+
+    .about .jobs {
+        width: 80vh;
+    }
+
+    .about h6{
+        font-size: 0.8rem;
+    }
+
+    .about__bio {
+        width: 60%;
+}
+.contact__list{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.social-icons{
+    display:flex;
+    flex-direction:column;
+    margin-right:2rem;
+}
+
+}
+
+@include media-xl{
+    .projects__bio-image, .about__bio-image, .home__bio-image, .contact__bio-image {
+        height:100vh; 
+    }
+
+}
+
+ 
